@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+        }
+        .linear{
+            height: 400px;
+            background: linear-gradient(to top,red,orange,yellow,green,blue,indigo,violet);
+        }
+
+        .radial{
+            height: 500px;
+            background: radial-gradient(circle,red,orange,yellow,green,blue,indigo,violet);
+        }
+
+        .conic{
+            height: 700px;
+            background: conic-gradient(from 180deg,red,orange,yellow,green,blue,indigo,violet);
+        }
+    </style>
+</head>
+<body>
+    <div class="linear">Linear</div>
+    <div class="radial">Radial</div>
+    <div class="conic">Conic</div>
+</body>
+</html>
