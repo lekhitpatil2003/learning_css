@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 30px;
+            color: blueviolet;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1:hover{
+            color: rgb(111, 0, 94);
+            background-color: rgb(37, 255, 4);
+            font-size: 50px;
+            text-shadow: 3px 3px 1px rgb(255, 0, 0);
+        }
+        .a_effect:active{
+            color: green;
+            font-size: 50px;
+            cursor: pointer;
+        }
+        input:focus{
+            background-color: red;
+            color: white;
+        }
+        button:hover{
+            color:red;
+        }
+        a:visited{
+            color: red;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        p::first-letter{
+            font-size: 50px;
+            color: red;
+        }
+
+        ::selection{
+            color: violet;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, minima porro, animi nulla temporibus maiores est quisquam hic in amet, eos quidem! Eum soluta ullam optio eveniet nemo veritatis provident illum iusto quisquam laboriosam fuga facere ex, numquam architecto accusamus sunt alias voluptate eaque cupiditate fugit pariatur! Voluptatum veniam nisi ex sint atque expedita voluptatibus esse obcaecati omnis nihil voluptate exercitationem, vel dicta eius fugiat tenetur vitae reiciendis ad optio.</p>
+    <a href="#">click here</a> <br>
+    <a href="#">click here</a> <br>
+    <a href="#">click here</a> <br>
+    <a href="#">click here</a> <br>
+    <h1>Hello! Good Morning</h1>
+    <h1 class="a_effect">Hello! Good Morning</h1>
+
+    <input type="text" placeholder="Text"/>
+    <button type="submit">Submit</button>
+</body>
+</html>
