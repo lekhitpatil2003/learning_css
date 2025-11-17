@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            letter-spacing: 4px;
+            font-size: 80px;
+            font-weight: 800;
+            perspective: 60px;
+        }
+        .text_container > b{
+            height: 100px;
+            box-shadow: 0px 6px 3px gray;
+            background: linear-gradient(to right, red,orange,yellow);
+            background-clip: text;
+            color: transparent;
+            transform-origin: bottom; 
+            /* transform: rotatex(-85deg); */
+            animation: getup 10s infinite;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        .text_container>b:nth-child(1){animation-delay: 0s;}
+        .text_container>b:nth-child(2){animation-delay: 0.25s;}
+        .text_container>b:nth-child(3){animation-delay: 0.50s;}
+        .text_container>b:nth-child(4){animation-delay: 0.75s;}
+        .text_container>b:nth-child(5){animation-delay: 1s;}
+        @keyframes getup{
+            from{transform: rotate(-85deg);}
+            10%,50%{transform: rotate(0deg);}
+            60%,100%{transform: rotate(-85deg);}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="text_container">
+        <b>P</b><b>A</b><b>T</b><b>I</b><b>L</b>
+    </div>
+</body>
+</html>
